@@ -9,10 +9,19 @@ class Player
 
   def question_for_player
     question = Question.new
+
     puts "#{self.name}: #{question.ask}"
+
     print '> '
+
     player_answer = $stdin.gets.chomp
-    question.check_answer(player_answer.to_i)
+
+    if question.check_answer(player_answer.to_i)
+      puts "#{self.name}: YES! You are correct." 
+    else 
+      puts "#{self.name}: Seriously? No!"
+      lose_life
+    end
   end
 
   def lose_life
