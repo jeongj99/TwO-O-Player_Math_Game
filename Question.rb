@@ -13,5 +13,3 @@ class Question
     @sum == answer
   end
 end
-
-question = Question.new
