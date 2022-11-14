@@ -3,4 +3,4 @@ require_relative 'Player'
 require_relative 'Question'
 
 new_game = Game.new
-puts new_game
+new_game.start
