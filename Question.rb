@@ -6,7 +6,7 @@ class Question
   end
 
   def ask
-    puts "What does #{@num1} plus #{@num2} equal?"
+    "What does #{@num1} plus #{@num2} equal?"
   end
 
   def check_answer(answer)
